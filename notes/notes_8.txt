@@ -90,16 +90,4 @@ def foo(d): # receives a dict
 select(movies, foo)
 What selects needs as a second argument a function or lambda (i.e., callable).
 
-Exercises: 
-(1) build select (yield, list comprehension, filter)
-def select(r, up) # yield
-    for d in r:
-         if up(d):
-             yield d
-
-def select(r, up): # list comprehension
-    return (d for d in r if up(d))
-
-def select(r, up): # filter
-    return filter(up, r)
 
